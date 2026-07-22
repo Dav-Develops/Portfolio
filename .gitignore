@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#side utility files
+*.GreenTree_CreatingStructure.py
