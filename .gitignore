@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+/GreenTree/client/node_modules
 # testing
 /coverage
 
