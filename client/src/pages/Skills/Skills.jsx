@@ -39,7 +39,7 @@ function Skills() {
                 </div>
 
             </div>
-        </PageLayou>
+        </PageLayout>
     );
 }
 
