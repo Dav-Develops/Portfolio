@@ -1,4 +1,5 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
+
 function Technologies() {
     const technologies = [
         "React",
@@ -14,7 +15,7 @@ function Technologies() {
     ];
 
     return (
-        <PagePanel className="container py-5">
+        <PageLayout title="Technologies and Frameworks used" subtitle="Brief information on the technologies and the frameworks used.">
             <div className="min-vh-100">
 
                 <h1 className="display-3 fw-bold mb-5">
@@ -37,7 +38,7 @@ function Technologies() {
                 </div>
 
             </div>
-        </PagePanel>
+        </PageLayout>
     );
 }
 

@@ -1,4 +1,5 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
+
 function Projects() {
     const projects = [
         {
@@ -19,7 +20,7 @@ function Projects() {
     ];
 
     return (
-        <PagePanel className="container py-5">
+        <PageLayout className="container py-5">
             <div className="min-vh-100">
 
                 <h1 className="display-3 fw-bold mb-5">
@@ -28,11 +29,8 @@ function Projects() {
 
                 <div className="row g-4">
 
-                    {projects.map((project) => (
-                        <div
-                            className="col-md-6 col-lg-4"
-                            key={project.title}
-                        >
+                    {projects.map((project, index) => (
+                        <div className="col-md-6 col-lg-4" key={index} >
                             <div className="card h-100 shadow-sm">
 
                                 <div className="card-body">
@@ -56,7 +54,7 @@ function Projects() {
                 </div>
 
             </div>
-        </PagePanel>
+        </PageLayout>
     );
 }
 

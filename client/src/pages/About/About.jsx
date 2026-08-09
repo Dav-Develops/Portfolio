@@ -1,8 +1,8 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
 
 function About() {
     return (
-        <PagePanel className="container py-5">
+        <PageLayout title="About Me" subtitle="This is my introduction">
             <div className="row min-vh-100 align-items-center">
                 
                 <div className="col-lg-8">
@@ -26,7 +26,7 @@ function About() {
                 </div>
 
             </div>
-        </PagePanel>
+        </PageLayout>
     );
 }
 

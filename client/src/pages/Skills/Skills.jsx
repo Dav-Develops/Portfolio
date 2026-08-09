@@ -1,4 +1,5 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
+
 function Skills() {
     const skills = [
         "HTML",
@@ -13,7 +14,7 @@ function Skills() {
     ];
 
     return (
-        <PagePanel className="container py-5">
+        <PageLayout title="Skills" subtitle="These are my Skills.">
             <div className="min-vh-100">
 
                 <h1 className="display-3 fw-bold mb-5">
@@ -38,7 +39,7 @@ function Skills() {
                 </div>
 
             </div>
-        </PagePanel>
+        </PageLayou>
     );
 }
 

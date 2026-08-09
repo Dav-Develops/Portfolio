@@ -1,57 +1,31 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
 
 function Home() {
     return (
-        <PagePanel>
+        <PageLayout title="Welcome" subtitle="My personal portfolio" >
 
-            <div className="container min-vh-100 d-flex align-items-center">
+            <div className="row min-vh-100 align-items-center bg-light rounded-3 shadow-sm p-4">
 
-                <div className="row w-100">
+                <div className="col-lg-8 mx-auto text-center">
 
-                    <div className="col-lg-7">
+                    <h2 className="display-5 fw-bold">
+                        Hello, I'm Davender Kumar, a Full Stack MERN Developer.
+                    </h2>
 
-                        <p className="fs-5 mb-2">
-                            Hello, I'm
-                        </p>
+                    <p className="lead mt-3">
+                        Full Stack MERN Developer
+                    </p>
 
-                        <h1 className="display-1 fw-bold">
-                            Your Name
-                        </h1>
-
-                        <h2 className="display-6 mb-4">
-                            Full Stack MERN Developer
-                        </h2>
-
-                        <p className="lead mb-4">
-                            I build modern web applications using
-                            MongoDB, Express, React and Node.js.
-                        </p>
-
-                        <div className="d-flex gap-3">
-
-                            <a
-                                href="/projects"
-                                className="btn btn-primary btn-lg"
-                            >
-                                View Projects
-                            </a>
-
-                            <a
-                                href="/about"
-                                className="btn btn-outline-dark btn-lg"
-                            >
-                                About Me
-                            </a>
-
-                        </div>
-
-                    </div>
+                    <p className="mt-4">
+                        I build modern web applications using
+                        React, Node.js, Express and MongoDB.
+                    </p>
 
                 </div>
 
             </div>
 
-        </PagePanel>
+        </PageLayout>
     );
 }
 

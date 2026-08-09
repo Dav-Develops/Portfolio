@@ -1,9 +1,9 @@
-import PagePanel from "../../components/UI/PagePanel";
+import PageLayout from "../../components/layout/PageLayout";
 function Contact() {
     return (
-        <PagePanel>
+        <PageLayout title="Contact Me" subtitle="Connect with me in accordance with the details provided below">
             <h1>Contact</h1>
-        </PagePanel>
+        </PageLayout>
     )
 }
 export default Contact;
