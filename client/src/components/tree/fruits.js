@@ -28,23 +28,22 @@ const fruits = [
     page: "/contact",
   },
   {
-    id: "techandframeworks",
+    id: "projects",
     model: "/models/fruits/cantaloupe.glb",
     position: [13.4, 16, -8],
     rotation: [0, Math.PI / 4, 0.5],
     scale: 0.9,
     hoverOffset: [0, 1.4, 0],
-    // page: "/techandframeworks",
     page: "/projects"
   },
 
   {
-    id: "projects",
+    id: "technologies",
     model: "/models/fruits/mango.glb",
     position: [5, 16, -18],
     scale: 1.01,
     hoverOffset: [0, 1.4, 0],
-    page: "/projects",
+    page: "/technologies",
   },
 
 ];
