@@ -20,7 +20,7 @@ const fruits = [
   },
   {
     id: "contact",
-    model: "/models/fruits/pumagranates.glb",
+    model: "/models/fruits/pumagranate.glb",
     position: [9, 10, 0],
     rotation: [0, Math.PI / 4, 0],
     scale: 0.9,
