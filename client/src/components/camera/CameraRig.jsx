@@ -11,14 +11,14 @@ function CameraRig() {
     );
 
     useFrame(() => {
-        const target = CameraPositions[currentFruit];
+        const target = CameraPositions[currentFruit] ?? CameraPositions.home;
 
         if (!target) return;
 
         const desiredPosition = new Vector3(...target.position);
 
         // Smooth movement
-        camera.position.lerp(desiredPosition, 0.05);
+        // camera.position.lerp(desiredPosition, 0.05);
 
         // Always look at target
         camera.lookAt(...target.target);

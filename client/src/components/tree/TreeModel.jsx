@@ -13,6 +13,6 @@ function TreeModel(props) {
 
     return <primitive object={scene} {...props} />;
 }
-useGLTF.preload("models/PortfolioTree2.glb");
+useGLTF.preload("/models/PortfolioTree.glb");
 
 export default TreeModel;

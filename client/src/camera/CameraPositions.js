@@ -1,19 +1,28 @@
-const CameraPositions = [
-    {
-        page: "home",
+const CameraPositions = {
+    home: {
         position: [8, 2, 5],
         target: [0, 3, 0],
     },
-    {
-        page: "about",
+    about: {
         position: [5, 5, 7],
-        target: [0.8, 4.2, 0],
+        target: [0, 3, 0],
     },
-    {
-        page: "skills",
+    skills: {
         position: [-5, 5, 7],
-        target: [-0.8, 4.2, 0],
+        target: [0, 3, 0],
     },
-];
+    contact: {
+        position: [7, 4, 3],
+        target: [0, 3, 0],
+    },
+    techandframeworks: {
+        position: [6, 4, 4],
+        target: [0, 3, 0],
+    },
+    projects: {
+        position: [-8, 4, -1],
+        target: [0, 3, 0],
+    },
+};
 
 export default CameraPositions;

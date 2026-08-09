@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    currentFruit: 0,
+    currentFruit: "home",
     isAnimating: false,
 };
 
