@@ -22,6 +22,11 @@ function Projects() {
             title: "Leetcode",
             description: "LeetCode Solved Questions",
         },
+        {
+            id: "portfolio",
+            title: "My Portfolio",
+            descriptoin: "My Personal Portfolio Website",
+        },
     ];
 
     const handleClick = (project_id) => {
@@ -34,6 +39,8 @@ function Projects() {
             case 'dsa': url = "https://github.com/Dav-Develops/Interprep/tree/master/Cpp%20Programming";
                 break;
             case 'leetcode': url = "https://leetcode.com/problem-list/ds08ekuh/";
+                break;
+            case 'portfolio': url = "https://github.com/Dav-Develops/Portfolio";
                 break;
             default: return;
         }
@@ -62,7 +69,7 @@ function Projects() {
                                         {project.description}
                                     </p>
 
-                                    <button className="btn btn-outline-secondary" onClick={()=> handleClick(project.id)}>
+                                    <button className="btn btn-outline-secondary" onClick={() => handleClick(project.id)}>
                                         View Project
                                     </button>
                                 </div>

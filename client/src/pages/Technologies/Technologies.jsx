@@ -18,14 +18,14 @@ function Technologies() {
         <PageLayout title="Technologies and Frameworks used" subtitle="Brief information on the modern technologies included.">
             <div className="min-vh-100">
 
-                <h1 className="display-3 fw-bold mb-5">
+                <p className="display-5 fw-bold mb-5">
                     Tech & Frameworks
-                </h1>
+                </p>
 
                 <div className="row g-3">
                     {technologies.map((technology) => (
                         <div className="col-6 col-md-4 col-lg-3" key={technology}>
-                            <div className="border rounded p-4 text-center bg-white bg-opacity-75">
+                            <div className="border rounded p-4 text-center bg-white bg-opacity-75 rgb-card">
                                 <strong>
                                     {technology}
                                 </strong>

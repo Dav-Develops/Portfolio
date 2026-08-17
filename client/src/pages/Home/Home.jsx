@@ -35,7 +35,7 @@ function Home() {
 
                 <div className="col-lg-10 mx-auto ">
 
-                    <h2 className="display-5 fw-bold ">
+                    <p className="display-5 fw-bold ">
                         Hello, I'm Davender Kumar,
                         <Typewriter options={{
                             strings: ["a Full Stack MERN Developer.", "a Web Developer.", "a Software Engineer."],
@@ -46,7 +46,7 @@ function Home() {
                             pauseFor: 2000,
                         }}
                         />
-                    </h2>
+                    </p>
 
                     <p className="lead mt-3 fw-semibold fst-italic">
                         Full Stack MERN Developer

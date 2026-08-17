@@ -1,25 +1,15 @@
 import PageLayout from "../../components/layout/PageLayout";
 
 function Skills() {
-    const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Redux Toolkit",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Git",
-    ];
+    const skills = [ "HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "Git"];
 
     return (
         <PageLayout title="Skills" subtitle="These are my Skills.">
             <div className="min-vh-100">
 
-                <h1 className="display-3 fw-bold mb-5">
+                <p className="display-5 fw-bold mb-5">
                     Skills
-                </h1>
+                </p>
 
                 <div className="row g-4">
                     {skills.map((skill) => (
