@@ -10,7 +10,7 @@ function PageTitle({ title, subtitle }) {
 
     return (
         <header
-            className="container-fluid py-4 text-white position-relative"
+            className="container-fluid py-3 py-sm-2 py-lg-2 text-white position-relative "
             style={{
                 backgroundColor: "rgba(108, 59, 170, 0.95)",
             }}
@@ -24,9 +24,9 @@ function PageTitle({ title, subtitle }) {
                     </h1>
 
                     {subtitle && (
-                        <p className="lead mb-0">
+                        <h5 className="lead mb-0">
                             {subtitle}
-                        </p>
+                        </h5>
                     )}
 
                 </div>

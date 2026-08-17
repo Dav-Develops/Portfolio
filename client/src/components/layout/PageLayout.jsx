@@ -9,17 +9,18 @@ function PageLayout({
 }) {
     return (
         <PagePanel
-            className="min-vh-100 d-flex flex-column"
-            style={{
-                backgroundColor: "rgba(255, 255, 255, 0.75)",
-            }}
-        >
+            className=" d-flex flex-column">
+
             <PageTitle
                 title={title}
                 subtitle={subtitle}
             />
 
-            <main className="container flex-grow-1 py-4">
+            <main className="container flex-grow-1 py-4 mw-100 min-vh-100"
+                        style={{
+                backgroundColor: "rgb(255, 255, 255)",
+            }}
+>
                 {children}
             </main>
 

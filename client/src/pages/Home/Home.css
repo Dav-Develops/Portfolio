@@ -1,0 +1,11 @@
+.animate__animated {
+    --animate-duration: 1s;
+}
+
+.animate__bounceInRight {
+    animation-delay: 0.4s;
+}
+
+.animate__bounceInLeft {
+    animation-delay: 0.8s;
+}

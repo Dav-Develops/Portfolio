@@ -12,13 +12,13 @@ function PageFooter() {
 
                     <div className="col-md-6 text-center text-md-start">
                         <span>
-                            © {new Date().getFullYear()} Your Name
+                            © {new Date().getFullYear()} Web Development
                         </span>
                     </div>
 
                     <div className="col-md-6 text-center text-md-end">
                         <span>
-                            Built with React & MERN
+                            Built with MERN Stack
                         </span>
                     </div>
 

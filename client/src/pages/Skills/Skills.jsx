@@ -23,10 +23,8 @@ function Skills() {
 
                 <div className="row g-4">
                     {skills.map((skill) => (
-                        <div
-                            className="col-6 col-md-4 col-lg-3"
-                            key={skill}
-                        >
+                        <div className="col-6 col-md-4 col-lg-3"
+                            key={skill}>
                             <div className="card h-100 shadow-sm">
                                 <div className="card-body text-center">
                                     <h5 className="card-title mb-0">
