@@ -10,7 +10,7 @@ function PageTitle({ title, subtitle }) {
 
     return (
         <header
-            className="container-fluid py-3 py-sm-2 py-lg-2 text-white position-relative "
+            className="container-fluid py-3 py-sm-2 py-lg-2 text-white position-relative rgb-border-bottom"
             style={{
                 backgroundColor: "rgba(108, 59, 170, 0.95)",
             }}
@@ -36,24 +36,9 @@ function PageTitle({ title, subtitle }) {
             {/* Page toggle */}
             <button
                 type="button"
-                className="
-                    position-absolute
-                    top-50
-                    end-0
-                    translate-middle-y
-                    me-3
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    rounded-circle
-                    border-0
-                    shadow
-                    bg-white
+                className=" position-absolute top-50 end-0 translate-middle-y me-3 d-flex justify-content-center align-items-center rounded-circle border-0 shadow bg-white
                 "
-                style={{
-                    width: "3rem",
-                    height: "3rem",
-                    fontSize: "1.25rem",
+                style={{ width: "3rem", height: "3rem", fontSize: "1.25rem",
                     zIndex: 10,
                 }}
                 onClick={() => dispatch(togglePage())}

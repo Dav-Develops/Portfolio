@@ -5,8 +5,6 @@ import * as bootstrap from 'bootstrap';
 import PageLayout from "../../components/layout/PageLayout";
 // import './Home.css';
 function Home() {
-    const shortDescription = [" I build modern web applications using React.", " I develop scalable backends with Node.js and Express.",
-        "I work with MongoDB to build reliable data-driven applications."];
     useEffect(() => {
         const carouselElement = document.getElementById("shortDescription");
 
@@ -60,7 +58,7 @@ function Home() {
 
                             <div className="carousel-item active">
                                 <p className="text-primary fs-5 fw-semibold">
-                                    2nd I build modern web applications using React.
+                                    I build modern web applications using React.
                                 </p>
                             </div>
 

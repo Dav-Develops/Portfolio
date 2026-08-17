@@ -1,0 +1,120 @@
+.rgb-border-bottom {
+    border-bottom: 0.3rem solid;
+    border-image: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+    ) 1;
+
+    background-size: 300% 100%;
+    animation: rgbBorder 6s linear infinite;
+}
+
+.rgb-border-top {
+    border-top: 0.3rem solid;
+    border-image: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+    ) 1;
+
+    background-size: 300% 100%;
+    animation: rgbBorder 6s linear infinite;
+}
+
+@keyframes rgbBorder {
+    0% {
+        border-image-source: linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red
+        );
+    }
+
+    5% {
+        border-image-source: linear-gradient(
+            90deg,
+            blue,
+            violet,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue
+        );
+    }
+
+    100% {
+        border-image-source: linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red
+        );
+    }
+}
+/* ___________________________________________________ */
+.rgb-card {
+    position: relative;
+    border: 0.2rem solid transparent !important;
+    border-radius: 0.75rem;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
+        ) padding-box,
+        linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red
+        ) border-box;
+
+    background-size: 100% 100%, 300% 100%;
+
+    animation: rgbCardBorder 6s linear infinite;
+}
+
+@keyframes rgbCardBorder {
+    0% {
+        background-position: 0% 0%, 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 0%, 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%, 0% 0%;
+    }
+}
