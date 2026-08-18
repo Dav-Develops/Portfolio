@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from '../pages/Authentication/Login';
+import ProtectedRoute from "./ProtectedRoute";
 import Layout from '../components/Layout/Layout';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
@@ -11,14 +13,19 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/login" element={<Login />} />
                 <Route path="/" element={<Layout />} >
+                    {/* Public Routes */}
                     <Route index element={<Home />} />
                     <Route path='about' element={<About />} />
-                    <Route path='projects' element={<Projects />} />
-                    <Route path='skills' element={<Skills />} />
-                    <Route path='technologies' element={<Technologies />} />
-                    <Route path='contact' element={<Contact />} />
+                    {/* Protected Routes */}
+                    <Route element={<ProtectedRoute />}>
+                        <Route path='projects' element={<Projects />} />
+                        <Route path='skills' element={<Skills />} />
+                        <Route path='technologies' element={<Technologies />} />
+                        <Route path='contact' element={<Contact />} />
                     </Route>
+                </Route>
             </Routes>
         </BrowserRouter>
     );
