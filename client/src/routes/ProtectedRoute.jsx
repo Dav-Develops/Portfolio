@@ -1,15 +1,17 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
-function ProtectedRoute(){
-    const isAuthenticated = useSelector(
-        (state)=> state.auth.isAuthenticated
-    );
+function ProtectedRoute() {
+    const { isAuthenticated, loading } = useSelector((state) => state.auth);
+
     const location = useLocation();
+    if(loading){
+        return null;
+    }
     if(!isAuthenticated){
         return(
             <Navigate
-            to={"login"}
+            to={"/login"}
             replace
             state={{from : location}} />
         )

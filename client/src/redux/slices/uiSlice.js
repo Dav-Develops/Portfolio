@@ -9,7 +9,16 @@ const initialState = {
 const uiSlice = createSlice({
     name : 'ui',
     initialState,
-    reducers : {},
+    reducers : {
+        toggle_theme: (state)=> {
+            state.theme = "light",
+            state.theme==="light" ? "dark" : "light"
+        },
+        togglePage: (state) =>{
+            state.pageOpen = !state.pageOpen;
+        },
+    },
 });
+export const{ toggle_theme, togglePage } = uiSlice.actions;
 
 export default uiSlice.reducer;
