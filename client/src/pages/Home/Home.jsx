@@ -35,18 +35,15 @@ function Home() {
 
                 <div className="col-lg-10 mx-auto ">
 
-                    <p className="display-5 fw-bold ">
+                    <span className="display-5 fw-bold ">
                         Hello, I'm Davender Kumar,
                         <Typewriter options={{
                             strings: ["a Full Stack MERN Developer.", "a Web Developer.", "a Software Engineer."],
-                            autoStart: true,
-                            loop: true,
-                            delay: 50,
-                            deleteSpeed: 50,
-                            pauseFor: 2000,
+                            autoStart: true, loop: true, delay: 2, deleteSpeed: 50,
+                            // pauseFor: 2000,
                         }}
                         />
-                    </p>
+                    </span>
 
                     <p className="lead mt-3 fw-semibold fst-italic">
                         Full Stack MERN Developer
@@ -75,12 +72,18 @@ function Home() {
                             </div>
 
                         </div>
+                        {/* <button
+                            className="carousel-control-prev "
+                            type="button"
+                            data-bs-target="#shortDescription"
+                            data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon"></span>
+                        </button> */}
                         <button
                             className="carousel-control-next"
                             type="button"
                             data-bs-target="#shortDescription"
-                            data-bs-slide="next"
-                        >
+                            data-bs-slide="next">
                             <span className="carousel-control-next-icon"></span>
                         </button>
                     </div>

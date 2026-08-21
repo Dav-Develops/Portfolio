@@ -42,18 +42,26 @@ function Login() {
                             <label className="form-label">Email</label>
 
                             <input type="email" className="form-control" value={email}
-                            onChange={(event)=> setEmail(event.target.value)} required/>
+                                onChange={(event) => setEmail(event.target.value)} required />
                         </div>
 
                         <div className="mb-4">
                             <label className="form-label">Password</label>
                             <input type="password" className="form-control" value={password}
-                            onChange={(event)=>setPassword(event.target.value)} required/>
+                                onChange={(event) => setPassword(event.target.value)} required />
                         </div>
 
                         <button type="submit" className="btn btn-primary w-100">Login</button>
 
                     </form>
+                    <div className="text-center mt-4">
+                        <span>Don't have an account? </span>
+
+                        <button type="button" className="btn btn-link p-0" 
+                        onClick={() => navigate("/register")} >
+                            Create one
+                        </button>
+                    </div>
 
                 </div>
             </div>
