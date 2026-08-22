@@ -20,8 +20,7 @@ function PageTitle({ title, subtitle }) {
 
     // Global theme state
     const theme = useSelector(
-        (state) => state.ui.theme
-    );
+        (state) => state.ui.theme);
 
 
     // Select theme icon
@@ -46,15 +45,11 @@ function PageTitle({ title, subtitle }) {
     return (
         <header
             className={`container-fluid py-3 py-sm-2 py-lg-2 position-relative rgb-border-bottom ${
-                theme === "dark"
-                    ? "text-white"
-                    : "text-white"
+                theme === "dark" ? "text-white" : "text-back"
             }`}
             style={{
                 backgroundColor:
-                    theme === "dark"
-                        ? "rgba(35, 35, 40, 0.95)"
-                        : "rgba(108, 59, 170, 0.95)",
+                    theme === "dark" ? "rgba(35, 35, 40, 0.95)" : "rgba(108, 59, 170, 0.95)",
             }}
         >
 
@@ -69,11 +64,8 @@ function PageTitle({ title, subtitle }) {
                     d-flex justify-content-center
                     align-items-center
                     shadow fs-4 translate-middle-y
-                    ${
-                        theme === "dark"
-                            ? "bg-dark text-white"
-                            : "bg-white text-dark"
-                    }`
+                    `
+                    // ${theme === "dark" ? "bg-dark text-white" : "bg-white text-dark"}
                 }
                 onClick={handleThemeToggle}
                 style={{

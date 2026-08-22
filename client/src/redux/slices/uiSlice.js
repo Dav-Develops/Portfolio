@@ -11,7 +11,6 @@ const uiSlice = createSlice({
     initialState,
     reducers : {
         toggle_theme: (state)=> {
-            state.theme = "light",
             state.theme==="light" ? "dark" : "light"
         },
         togglePage: (state) =>{

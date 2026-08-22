@@ -1,0 +1,17 @@
+/* Change the overall dropdown menu background */
+.custom-dropdown-menu {
+  background-color: #2c3e50 !important; /* Your custom background hex */
+  border: 1px solid #34495e;
+}
+
+/* Style the text and baseline state of the links */
+.custom-dropdown-menu .custom-dropdown-item {
+  color: #ecf0f1 !important; /* Light text color */
+}
+
+/* Style the hover and focus states */
+.custom-dropdown-menu .custom-dropdown-item:hover,
+.custom-dropdown-menu .custom-dropdown-item:focus {
+  background-color: #1abc9c !important; /* Accent color on hover */
+  color: #ffffff !important;
+}
