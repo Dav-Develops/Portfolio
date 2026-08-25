@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import { setCredentials } from "../../features/auth/authSlice";
 import { loginUser } from "../../features/auth/authAPI";
+import '../../index.css';
 
 function Login() {
     const dispatch = useDispatch();

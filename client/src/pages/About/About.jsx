@@ -1,6 +1,6 @@
 import 'animate.css';
-import '../About/About.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import '../About/About.css';
+import '../../index.css';
 import { GiLaptop } from "react-icons/gi";
 import { CiSettings } from "react-icons/ci";
 import { FaGlobe } from 'react-icons/fa';
@@ -62,14 +62,14 @@ function About() {
                             // Extracting logos:
                             const Logo = work.logo;
                             return (
-                                <div className="col-12 col-md-6 col-lg-4 cursor-pointer" key={work.title}>
-                                    <div className="card h-100 shadow-sm rgb-card">
+                                <div className="col-12 col-md-6 col-lg-4 cursor-pointer theme-text" key={work.title}>
+                                    <div className="card theme-card h-100 shadow-sm rgb-card theme-text">
                                         <div className="card-body text-center">
                                             <div className="fs-1 mb-3">
                                                 {/* <{work.logo}/> */}
                                                 <Logo />
                                             </div>
-                                            <h3 className="card-title">
+                                            <h3 className="card-title theme-heading">
                                                 {work.title}
                                             </h3>
                                             <p className="card-text">
@@ -154,7 +154,7 @@ function About() {
                 <section className="py-5">
                     <div className="row">
                         <div className="col-lg-9 mx-auto">
-                            <div className="card shadow-sm rgb-card">
+                            <div className="card shadow-sm rgb-card theme-card">
                                 <div className="card-body p-4 p-lg-5 text-center">
                                     <p className="fs-2 text-uppercase fw-semibold text-success">
                                         This Portfolio
@@ -176,3 +176,371 @@ function About() {
 }
 
 export default About;
+
+// import "animate.css";
+
+// import { GiLaptop } from "react-icons/gi";
+// import { CiSettings } from "react-icons/ci";
+// import { FaGlobe } from "react-icons/fa";
+
+// import PageLayout from "../../components/layout/PageLayout";
+
+
+// function About() {
+
+//     const myWork = [
+//         {
+//             id: "frontend",
+//             logo: GiLaptop,
+//             title: "Frontend Development",
+//             description:
+//                 "Creating responsive and interactive interfaces with React, JavaScript, Bootstrap and modern frontend tools.",
+//         },
+//         {
+//             id: "backend",
+//             logo: CiSettings,
+//             title: "Backend Development",
+//             description:
+//                 "Building APIs and server-side applications with Node.js, Express and MongoDB.",
+//         },
+//         {
+//             id: "fullstack",
+//             logo: FaGlobe,
+//             title: "Full Stack Applications",
+//             description:
+//                 "Connecting frontend, backend and database technologies into complete web applications.",
+//         },
+//     ];
+
+
+//     return (
+//         <PageLayout
+//             title="About Me"
+//             subtitle="A little bit about who I am and what I build"
+//         >
+
+//             <div className="container">
+
+
+//                 {/* =================================================
+//                     INTRODUCTION
+//                 ================================================= */}
+
+//                 <section className="min-vh-75 d-flex align-items-center">
+
+//                     <div className="col-12 col-lg-8 overflow-hidden">
+
+//                         <p className="theme-accent text-uppercase fw-semibold fs-4">
+//                             About Me
+//                         </p>
+
+//                         <h2 className="theme-heading display-5 fw-bold mb-4">
+//                             Building things for the web.
+//                         </h2>
+
+//                         <p
+//                             className="
+//                                 theme-text
+//                                 lead
+//                                 mb-4
+//                                 fs-2
+//                                 animate__animated
+//                                 animate__zoomIn
+//                                 animate__delay-2s
+//                             "
+//                         >
+//                             I'm a developer who enjoys turning ideas into
+//                             interactive, useful and visually engaging web
+//                             applications.
+//                         </p>
+
+//                         <p
+//                             className="
+//                                 theme-text
+//                                 lead
+//                                 fs-3
+//                             "
+//                         >
+//                             I enjoy working across the frontend and backend,
+//                             from designing user interfaces to building APIs,
+//                             managing databases and connecting everything
+//                             together into a complete application.
+//                         </p>
+
+//                     </div>
+
+//                 </section>
+
+
+//                 {/* =================================================
+//                     WHAT I DO
+//                 ================================================= */}
+
+//                 <section className="py-5">
+
+//                     <div className="row mb-5">
+
+//                         <div className="col-12 col-lg-8">
+
+//                             <p className="theme-accent text-uppercase fw-semibold fs-4">
+//                                 What I Do
+//                             </p>
+
+//                             <h2 className="theme-heading display-6 fw-bold">
+//                                 From idea to application
+//                             </h2>
+
+//                         </div>
+
+//                     </div>
+
+
+//                     <div className="row g-4">
+
+//                         {myWork.map((work) => {
+
+//                             const Logo = work.logo;
+
+//                             return (
+//                                 <div
+//                                     className="col-12 col-md-6 col-lg-4"
+//                                     key={work.id}
+//                                 >
+
+//                                     <div className="
+//                                         card
+//                                         theme-card
+//                                         h-100
+//                                         shadow-sm
+//                                         rgb-card
+//                                     ">
+
+//                                         <div className="
+//                                             card-body
+//                                             text-center
+//                                             p-4
+//                                         ">
+
+//                                             <div className="
+//                                                 theme-icon
+//                                                 fs-1
+//                                                 mb-3
+//                                             ">
+//                                                 <Logo />
+//                                             </div>
+
+//                                             <h3 className="
+//                                                 theme-heading
+//                                                 card-title
+//                                             ">
+//                                                 {work.title}
+//                                             </h3>
+
+//                                             <p className="
+//                                                 theme-text
+//                                                 card-text
+//                                             ">
+//                                                 {work.description}
+//                                             </p>
+
+//                                         </div>
+
+//                                     </div>
+
+//                                 </div>
+//                             );
+//                         })}
+
+//                     </div>
+
+//                 </section>
+
+
+//                 {/* =================================================
+//                     DEVELOPMENT APPROACH
+//                 ================================================= */}
+
+//                 <section className="py-5">
+
+//                     <div className="row align-items-center g-5">
+
+//                         <div className="col-12 col-lg-6">
+
+//                             <p className="
+//                                 theme-accent
+//                                 text-uppercase
+//                                 fw-semibold
+//                                 fs-4
+//                             ">
+//                                 My Approach
+//                             </p>
+
+//                             <h2 className="
+//                                 theme-heading
+//                                 display-6
+//                                 fw-bold
+//                                 mb-4
+//                             ">
+//                                 Learn. Build. Improve.
+//                             </h2>
+
+//                             <p
+//                                 className="
+//                                     theme-text
+//                                     fs-4
+//                                     animate__animated
+//                                     animate__zoomIn
+//                                     animate__delay-4s
+//                                 "
+//                             >
+//                                 I believe the best way to learn development
+//                                 is by building real projects and solving
+//                                 real problems.
+//                             </p>
+
+//                             <p
+//                                 className="
+//                                     theme-text
+//                                     fs-4
+//                                     animate__animated
+//                                     animate__zoomIn
+//                                     animate__delay-4s
+//                                 "
+//                             >
+//                                 Instead of focusing only on tutorials,
+//                                 I prefer experimenting with technologies,
+//                                 understanding how they work and applying
+//                                 them to practical projects.
+//                             </p>
+
+//                         </div>
+
+
+//                         {/* Approach Cards */}
+
+//                         <div className="col-12 col-lg-6">
+
+//                             <div className="row g-3">
+
+//                                 {[
+//                                     ["01", "Learn"],
+//                                     ["02", "Build"],
+//                                     ["03", "Experiment"],
+//                                     ["04", "Improve"],
+//                                 ].map(([number, title]) => (
+
+//                                     <div
+//                                         className="col-6"
+//                                         key={number}
+//                                     >
+
+//                                         <div className="
+//                                             theme-mini-card
+//                                             p-4
+//                                             rounded
+//                                             text-center
+//                                             h-100
+//                                             shadow
+//                                         ">
+
+//                                             <h3 className="
+//                                                 theme-heading
+//                                                 display-6
+//                                                 fw-bold
+//                                             ">
+//                                                 {number}
+//                                             </h3>
+
+//                                             <p className="
+//                                                 theme-text
+//                                                 mb-0
+//                                             ">
+//                                                 {title}
+//                                             </p>
+
+//                                         </div>
+
+//                                     </div>
+
+//                                 ))}
+
+//                             </div>
+
+//                         </div>
+
+//                     </div>
+
+//                 </section>
+
+
+//                 {/* =================================================
+//                     THIS PORTFOLIO
+//                 ================================================= */}
+
+//                 <section className="py-5">
+
+//                     <div className="row">
+
+//                         <div className="col-12 col-lg-9 mx-auto">
+
+//                             <div className="
+//                                 card
+//                                 theme-card
+//                                 shadow-sm
+//                                 rgb-card
+//                             ">
+
+//                                 <div className="
+//                                     card-body
+//                                     p-4
+//                                     p-lg-5
+//                                     text-center
+//                                 ">
+
+//                                     <p className="
+//                                         theme-accent
+//                                         fs-2
+//                                         text-uppercase
+//                                         fw-semibold
+//                                     ">
+//                                         This Portfolio
+//                                     </p>
+
+//                                     <h2 className="
+//                                         theme-heading
+//                                         display-6
+//                                         fw-bold
+//                                         mb-4
+//                                     ">
+//                                         More than a traditional portfolio.
+//                                     </h2>
+
+//                                     <p className="
+//                                         theme-text
+//                                         lead
+//                                         mb-0
+//                                         fs-4
+//                                     ">
+//                                         This website combines a MERN
+//                                         application with React Three Fiber
+//                                         and Three.js to create an
+//                                         interactive 3D portfolio experience.
+//                                     </p>
+
+//                                 </div>
+
+//                             </div>
+
+//                         </div>
+
+//                     </div>
+
+//                 </section>
+
+//             </div>
+
+//         </PageLayout>
+//     );
+// }
+
+// export default About;

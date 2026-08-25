@@ -88,7 +88,7 @@ function Home() {
                         </button>
                     </div>
                     <div className="container mt-4 lh-lg fs-5">
-                        <p className="text-dark">
+                        <p>
                             I&rsquo;m a passionate Full Stack MERN Developer who enjoys turning ideas into interactive,
                             meaningful digital experiences. I love building clean, responsive, and scalable web applications
                             while continuously exploring modern technologies and better ways to solve problems.

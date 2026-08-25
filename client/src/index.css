@@ -118,3 +118,263 @@
         background-position: 0% 0%, 0% 0%;
     }
 }
+/* ----------------------Cards behaviour According to Theme */
+/* --------Light theme----------- */
+/* =========================================================
+   THEME - BOOTSTRAP CARDS
+========================================================= */
+
+.theme-light .theme-card {
+    --bs-card-bg: #ffffff;
+    --bs-card-color: #212529;
+    --bs-card-title-color: #212529;
+    --bs-card-text-color: #495057;
+
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+.theme-dark .theme-card {
+    --bs-card-bg: #212529;
+    --bs-card-color: #f8f9fa;
+    --bs-card-title-color: #ffffff;
+    --bs-card-text-color: #ced4da;
+
+    background-color: #212529;
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+
+/* Card body */
+
+.theme-light .theme-card .card-body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.theme-dark .theme-card .card-body {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+
+/* Card title */
+
+.theme-light .theme-card .card-title {
+    color: #212529;
+}
+
+.theme-dark .theme-card .card-title {
+    color: #ffffff;
+}
+
+
+/* Card text */
+
+.theme-light .theme-card .card-text {
+    color: #495057 !important;
+}
+
+.theme-dark .theme-card .card-text {
+    color: #ced4da !important;
+}
+
+
+/* Normal paragraphs inside cards */
+
+.theme-light .theme-card p {
+    color: #495057;
+}
+
+.theme-dark .theme-card p {
+    color: #ced4da;
+}
+
+
+/* Lists */
+
+.theme-light .theme-card li {
+    color: #495057;
+}
+
+.theme-dark .theme-card li {
+    color: #ced4da;
+}
+/* -------------------Normal Text and background according to theme---------------*/
+.theme-light .theme_bgandtext {
+    background-color: #ffffff;
+    color: #000000;
+}
+.theme-dark .theme_bgandtext {
+    background-color: #000000;
+    color: #ced4da;
+}
+/* ------------------------Global Theme change logics--------------------------- */
+
+html,
+body,
+#root {
+    min-height: 100%;
+    margin: 0;
+}
+
+
+body {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =========================================================
+   LIGHT THEME
+========================================================= */
+
+body.theme-light {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+
+/* =========================================================
+   DARK THEME
+========================================================= */
+
+body.theme-dark {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+
+/* =========================================================
+   PAGE LAYOUT
+========================================================= */
+
+.page-layout {
+    min-height: 100vh;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.theme-light.page-layout {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #212529;
+}
+
+
+.theme-dark.page-layout {
+    background-color: rgba(18, 18, 18, 0.95);
+    color: #f8f9fa;
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.page-content {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.theme-light .page-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #212529;
+}
+
+
+.theme-dark .page-content {
+    background-color: rgba(18, 18, 18, 0.95);
+    color: #f8f9fa;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.theme-light.page-title {
+    background-color: rgba(108, 59, 170, 0.95);
+    color: white;
+}
+
+
+.theme-dark.page-title {
+    background-color: rgba(35, 35, 40, 0.95);
+    color: white;
+}
+
+
+/* =========================================================
+   THEME BUTTON
+========================================================= */
+
+.theme-light .theme-button {
+    background-color: white;
+    color: #212529;
+}
+
+
+.theme-dark .theme-button {
+    background-color: #212529;
+    color: white;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.theme-light .card {
+    background-color: white;
+    color: #212529;
+}
+
+
+.theme-dark .card {
+    background-color: #212529;
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+
+/* =========================================================
+   FORM CONTROLS
+========================================================= */
+
+.theme-dark .form-control,
+.theme-dark .form-select {
+    background-color: #212529;
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+
+.theme-dark .form-control::placeholder {
+    color: #adb5bd;
+}
+
+
+/* =========================================================
+   TRANSITIONS
+========================================================= */
+
+.page-layout,
+.page-content,
+.page-title,
+.card,
+.form-control,
+.form-select,
+.theme-button {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
