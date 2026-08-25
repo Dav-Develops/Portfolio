@@ -44,20 +44,18 @@ function PageTitle({ title, subtitle }) {
 
     return (
         <header
-            className={`container-fluid py-3 py-sm-2 py-lg-2 position-relative rgb-border-bottom ${
-                theme === "dark" ? "text-white" : "text-back"
-            }`}
+            className={`container-fluid py-3 py-sm-2 py-lg-2 position-relative rgb-border-bottom
+                text-white`}
+                // ${theme === "dark" ? "text-white" : "text-back"}
             style={{
                 backgroundColor:
                     theme === "dark" ? "rgba(35, 35, 40, 0.95)" : "rgba(108, 59, 170, 0.95)",
             }}
         >
 
-            {/* =====================================================
-                THEME BUTTON
-            ====================================================== */}
+            {/* ------------------- THEME BUTTON ---------------------- */}
 
-            <button
+            {/* <button
                 type="button"
                 className={`position-absolute top-50 start-0 ms-3
                     rounded-4 border-0
@@ -73,15 +71,12 @@ function PageTitle({ title, subtitle }) {
                     height: "3.1rem",
                     zIndex: 10,
                 }}
-                aria-label="Toggle website theme"
-            >
+                aria-label="Toggle website theme" >
                 <ThemeIcon />
-            </button>
+            </button> */}
 
 
-            {/* =====================================================
-                TITLE
-            ====================================================== */}
+            {/* ---------------------------- TITLE ------------------------*/}
 
             <div className="container">
 
@@ -102,28 +97,17 @@ function PageTitle({ title, subtitle }) {
             </div>
 
 
-            {/* =====================================================
-                PAGE MENU / CLOSE BUTTON
-            ====================================================== */}
+            {/* --------------------PAGE MENU / CLOSE BUTTON ---------------------------*/}
 
-            <button
-                type="button"
-                className={`position-absolute
-                    top-50 end-0
-                    translate-middle-y me-3
-                    d-flex justify-content-center
-                    align-items-center
-                    rounded-circle border-0 shadow
+            <button type="button" className={`position-absolute top-50 end-0 translate-middle-y me-3
+                    d-flex justify-content-center align-items-center rounded-circle border-0 shadow
                     ${
                         theme === "dark"
                             ? "bg-dark text-white"
                             : "bg-white text-dark"
                     }`
                 }
-                style={{
-                    width: "3rem",
-                    height: "3rem",
-                    fontSize: "1.25rem",
+                style={{ width: "3rem", height: "3rem", fontSize: "1.25rem",
                     zIndex: 10,
                 }}
                 onClick={() => dispatch(togglePage())}
