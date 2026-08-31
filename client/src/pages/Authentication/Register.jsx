@@ -31,7 +31,7 @@ function Register() {
 
         try {
             await axios.post(
-                "http://localhost:5000/api/auth/register",
+                "https://myportfolio-api.onrender.com/api/auth/register",
                 formData,
                 {
                     withCredentials: true,
