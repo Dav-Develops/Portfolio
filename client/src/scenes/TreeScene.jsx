@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
-import Tree from "../components/Tree/Tree";
-import Island from "../components/World/Island";
+import Tree from "../components/tree/Tree";
+import Island from "../components/world/Island";
 import CameraController from "../components/camera/CameraController";
 // import { Camera } from "three";
 import CameraRig from "../components/camera/CameraRig";

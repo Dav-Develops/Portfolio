@@ -1,6 +1,6 @@
 import PageTitle from "./PageTitle";
 import PageFooter from "./PageFooter";
-import PagePanel from "../UI/PagePanel";
+import PagePanel from '../ui/PagePanel';
 
 function PageLayout({
     title,

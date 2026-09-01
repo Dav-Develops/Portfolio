@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import TreeScene from '../../scenes/TreeScene';
-// import Overlay from '../UI/Overlay';
+// import Overlay from '../ui/Overlay';
 
 function Layout() {
     return(
