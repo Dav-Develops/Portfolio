@@ -156,7 +156,8 @@ npm test         # Placeholder test command
 
 ## License
 
-This project is licensed under the ISC License.
+© 2026 Dav-Develops. Licensed under CC BY‑NC‑ND 4.0.
+https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 ## Author
 
