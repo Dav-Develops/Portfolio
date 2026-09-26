@@ -1,6 +1,7 @@
 # Dav-Develops Portfolio
 
 A full-stack portfolio website built with React, Vite, and Express. The project presents personal information, projects, skills, technologies, contact details, and protected authentication flows.
+<img width="1912" height="932" alt="image" src="https://github.com/user-attachments/assets/29036ce9-4485-48af-be05-2455d3e846d8" />
 
 ## Overview
 
