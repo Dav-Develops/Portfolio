@@ -36,7 +36,7 @@ This repository contains a modern portfolio application with:
 - JWT support via jsonwebtoken
 - MongoDB via mongoose
 
-## Project Structure
+## Project Structure (Simplified and easily perceptuable)
 
 ```text
 Portfolio/
