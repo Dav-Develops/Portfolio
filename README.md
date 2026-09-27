@@ -5,7 +5,8 @@ A full-stack portfolio website built with React, Vite, and Express. The project 
 
 **Fruit (3D Object) Navigation System.** 🤩
 
-<img width="1908" height="919" alt="image" src="https://github.com/user-attachments/assets/ba4af6e7-e04b-4778-8be4-779dea4aaefc" />
+<img width="1892" height="906" alt="image" src="https://github.com/user-attachments/assets/de5de82c-1ddc-4400-9cdc-054c0a337d13" />
+
 
 ## Overview
 
